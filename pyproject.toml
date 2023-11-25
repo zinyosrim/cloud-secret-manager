@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "cloudsecretmanager"
+version = "0.1.0"
+description = "A unified interface for managing secrets across multiple cloud providers. This package includes concrete implementations for Azure Key Vault and Google Cloud Secret Manager, providing a consistent and simplified API for secret creation, retrieval, and management. It is designed to facilitate secure and efficient secret handling in cloud-based applications, promoting best practices in secret management."
+authors = ["Zin Yosrim <zinyosrim@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+azure-identity = "^1.15.0"
+azure-keyvault-secrets = "^4.7.0"
+google-cloud-secret-manager = "^2.16.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
