@@ -84,8 +84,8 @@ Follow these steps to execute the tests:
 
 2. Run the tests using the following command:
 
-   ```bash
-   python -m unittest discover -s tests
+```bash
+python -m unittest discover -s tests
 ```
 
 ## Contributing
