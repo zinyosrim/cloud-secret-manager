@@ -47,7 +47,12 @@ To use the Cloud Secret Manager, first import the appropriate class for your clo
 from cloudsecretmanager.azure import AzureKeyVaultManager
 from cloudsecretmanager.gcp import GCPSecretManager
 ```
+### Unified API Overview
+The Cloud Secret Manager package is designed with a unified API, meaning it offers a consistent set of methods and interfaces for managing secrets, regardless of the underlying cloud provider. This unified approach simplifies secret management in multi-cloud environments and makes the code more maintainable and scalable.
 
+The same set of methods (`create`, `get`) can be used for different cloud providers. This consistency greatly simplifies the learning curve when switching between or working with multiple cloud environments.
+
+With a unified API, you can easily switch between cloud providers without significantly altering your codebase. This flexibility is crucial for scenarios where applications might migrate or span multiple cloud services.
 ### Azure Key Vault Example
 ```python
 # Create an instance of AzureKeyVaultManager
