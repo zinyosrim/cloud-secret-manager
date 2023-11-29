@@ -44,10 +44,11 @@ class GCPSecretManager(SecretManager):
             }
         )
 
-    def get(self, *, secret_id: str, version_id: str = "latest") -> Optional[str]:
+    def get(self, *, secret_id: str) -> Optional[str]:
         if not secret_id:
             raise ValueError("`secret_id` cannot be empty")
 
+        version_id = "latest"
         try:
             name = f"{self.parent}/secrets/{secret_id}/versions/{version_id}"
             response = self.client.access_secret_version(request={"name": name})

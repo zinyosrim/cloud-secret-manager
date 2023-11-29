@@ -11,15 +11,15 @@ The project is organized as follows:
 ├── README.md
 ├── cloudsecretmanager
 │   ├── __init__.py
-│   ├── azure.py         # Azure Key Vault implementation
-│   ├── gcp.py           # Google Cloud Secret Manager implementation
-│   └── secret_manager.py # Abstract base class for secret managers
+│   ├── azure.py                    # Azure Key Vault implementation
+│   ├── gcp.py                      # Google Cloud Secret Manager implementation
+│   └── secret_manager.py           # Abstract base class for secret managers
 ├── poetry.lock
 ├── pyproject.toml
 └── tests
     ├── __init__.py
-    ├── test_az_mock.py          # Mock tests for Azure implementation
-    └── test_az_real_connection.py # Real connection tests for Azure implementation
+    ├── test_az_mock.py             # Mock tests for Azure implementation
+    └── test_az_real_connection.py  # Real connection tests for Azure implementation
 ```
 
 
