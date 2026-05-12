@@ -97,4 +97,4 @@ python -m unittest discover -s tests
 Contributions to the Cloud Secret Manager are welcome! Please refer to the contributing guidelines for more information.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the BSD 2-Clause License - see the [LICENSE](LICENSE) file for details.
